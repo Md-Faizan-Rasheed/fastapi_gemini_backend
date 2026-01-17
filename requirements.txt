@@ -26,7 +26,8 @@ google-auth-oauthlib==1.2.1
 starlette==0.36.3  # aligns cleanly with FastAPI 0.109.x
 
 # --- Pydantic for data validation ---
-pydantic==2.7.0  # will auto-pull compatible prebuilt pydantic-core wheel
+pydantic==2.6.4
+pydantic-core==2.16.3
 
 # --- Typing / Utilities ---
 typing-extensions==4.12.2
