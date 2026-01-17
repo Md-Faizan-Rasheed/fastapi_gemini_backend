@@ -26,7 +26,6 @@ starlette==0.37.2
 
 # Pydantic for data validation
 pydantic==2.7.0
-pydantic-core==2.18.2
 
 # Optional utilities
 typing-extensions==4.12.2
