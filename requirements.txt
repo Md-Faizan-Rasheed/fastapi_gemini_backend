@@ -1,0 +1,35 @@
+# Core Framework
+fastapi==0.115.0
+uvicorn[standard]==0.30.3
+
+# Database and BSON (MongoDB-style ObjectId)
+pymongo==4.7.2
+bson==0.5.10
+
+# HTTP Client
+httpx==0.27.0
+
+# Environment Variables
+python-dotenv==1.0.1
+
+# PDF Processing
+PyPDF2==3.0.1
+
+# Google Drive API (and authentication)
+google-api-python-client==2.126.0
+google-auth==2.35.0
+google-auth-httplib2==0.2.0
+google-auth-oauthlib==1.2.1
+
+# CORS Middleware
+starlette==0.37.2
+
+# Pydantic for data validation
+pydantic==2.7.0
+pydantic-core==2.18.2
+
+# Optional utilities
+typing-extensions==4.12.2
+
+# If you use dotenv or temporary directories
+shutilwhich==1.1.0
