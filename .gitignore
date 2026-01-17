@@ -1,0 +1,125 @@
+##################################
+# GLOBAL
+##################################
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.log
+
+# Env files (IMPORTANT)
+.env
+.env.*
+!.env.example
+
+##################################
+# FRONTEND (React) - my-project
+##################################
+
+# Dependencies
+my-project/node_modules/
+
+# Build outputs
+my-project/build/
+my-project/dist/
+
+# Cache
+my-project/.cache/
+my-project/.parcel-cache/
+my-project/.vite/
+my-project/.eslintcache
+
+# Logs
+my-project/npm-debug.log*
+my-project/yarn-debug.log*
+my-project/yarn-error.log*
+my-project/pnpm-debug.log*
+
+##################################
+# NODE.JS BACKEND - backend
+##################################
+
+# Dependencies
+backend/node_modules/
+
+# Build / transpiled files
+backend/dist/
+backend/build/
+
+# Logs
+backend/logs/
+backend/*.log
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+
+# Runtime data
+backend/pids/
+backend/*.pid
+backend/*.seed
+backend/.env
+
+# Coverage
+backend/coverage/
+
+##################################
+# FASTAPI BACKEND - bdfastapi
+##################################
+
+# Python cache
+bdfastapi/__pycache__/
+bdfastapi/**/*.pyc
+bdfastapi/**/*.pyo
+bdfastapi/**/*.pyd
+
+# Virtual environments
+bdfastapi/venv/
+bdfastapi/.venv/
+bdfastapi/env/
+
+# FastAPI runtime
+bdfastapi/.pytest_cache/
+bdfastapi/.mypy_cache/
+bdfastapi/.ruff_cache/
+
+# Logs
+bdfastapi/logs/
+bdfastapi/*.log
+
+# SQLite DB (if used locally)
+bdfastapi/*.db
+bdfastapi/*.sqlite3
+
+##################################
+# TEST / COVERAGE
+##################################
+
+coverage/
+htmlcov/
+.pytest_cache/
+
+##################################
+# DOCKER
+##################################
+
+docker-compose.override.yml
+*.env.docker
+
+##################################
+# MISC
+##################################
+
+*.pem
+*.key
+*.crt
+*.cert
+venv
+bdfastapi/service_account.json
+service_account.json
