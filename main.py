@@ -14,6 +14,7 @@ from googleapiclient.http import MediaFileUpload
 from google.oauth2 import service_account
 import tempfile
 import shutil
+from fastapi.responses import JSONResponse
 
 
 load_dotenv()
@@ -72,6 +73,13 @@ class JobResponse(BaseModel):
     questions: List[Question]
     numberOfQuestions: int
 
+
+@app.get("/health", summary="Health check endpoint", tags=["Monitoring"])
+def health_check():
+    """
+    Responds with a simple status message to indicate the API is healthy.
+    """
+    return JSONResponse(content={"status": "healthy"}, status_code=200)
 
 
 
